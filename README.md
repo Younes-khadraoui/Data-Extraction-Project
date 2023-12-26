@@ -1,1 +1,1 @@
-Data rxtraction using unitex and python
+Data extraction using unitex and python
