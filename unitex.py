@@ -1,7 +1,13 @@
 '''
-"Alphabet.txt" est un fichier qui specifie l'alphabet utilise dans corpus-medical
- il definit les caracteres consideres comme des lettres, de la ponctuation, etc
- il est utilise pendant le processus de normalisation pour diviser le texte en jetons.
+"Alphabet.txt" est un fichier qui spécifie l'alphabet utilisé dans le corpus médical
+il définit les caractères considérés comme des lettres, de la ponctuation, etc
+ce fichier est utilisé pendant le processus de normalisation pour découper le texte en tokens
+exemple1 : si le corpus ne doit considerer que les lettres de l'alphabet latin, le fichier Alphabet.txt pourrait rassembler a ceci:
+ A B C D E F I G K L M N O P Q R S T U V W X Y Z 
+ a b c d e f i g k l m n o p q r s t u v w x y z
+exemple2 : si on a des chiffres et des symboles spéciaux sont inclus dans l'alphabet
+cela peut être considéré comme un échec si ces caractères ne sont pas pertinents pour le corpus
+l'inclusion d'éléments inappropriés dans l'alphabet peut conduire à des résultats incorrects ou indésirables lors de l'analyse du corpus.
 '''
 
 import os 
